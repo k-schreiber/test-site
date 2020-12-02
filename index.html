@@ -19,8 +19,8 @@
   var myInterval = setInterval(function() {
     var participants = api.getParticipantsInfo();
     var participant = participants[Math.floor(Math.random() * participants.length)];
-    api.setLargeVideoParticipant(participant);
-    console.log('Set large video participant to '+participant);
+    api.setLargeVideoParticipant(participant.participantId);
+    console.log('Set large video participant to participantId='+participant);
   }, 5000);
 
 </script>
