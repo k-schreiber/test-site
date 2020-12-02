@@ -20,7 +20,7 @@
     var participants = api.getParticipantsInfo();
     var participant = participants[Math.floor(Math.random() * participants.length)];
     api.setLargeVideoParticipant(participant.participantId);
-    console.log('Set large video participant to participantId='+participant);
+    console.log('Set large video participant to participantId='+participant.participantId);
   }, 5000);
 
 </script>
